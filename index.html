@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/39472fb910.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        "loop-scroll": "loop-scroll 18s ease-in-out infinite",
+                        "loop-scroll-two": "loop-scroll-two 18s ease-in-out infinite",
+                    },
+                    keyframes: {
+                        "loop-scroll": {
+                            from: { transform: "translateX(0%)" },
+                            to: { transform: "translateX(-100%)" },
+                        },
+
+                        "loop-scroll-two": {
+                            from: { transform: "translateX(-100%)" },
+                            to: { transform: "translateX(0)" },
+                        },
+                    },
+                },
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- Header Section    -->
+
+    <!-- Nav-Bar -->
+    <header class="header w-[100%] h-[100vh]">
+        <nav id="nav" class="h-[10vh] px-4 shadow-md  flex items-center justify-between gap-4 lg:px-10">
+            <div class="logo flex items-center cursor-pointer">
+                <i class="fa-solid fa-medal text-blue-500 text-[24px] sm:text-[26px]"></i>
+                <h1 class="text-[18px] text-blue-500 font-medium sm:text-[22px]">RISHAB TOOLS</h1>
+            </div>
+            <div class="nav-links hidden lg:block w-[50vw] lg:flex gap-12 justify-center items-center">
+                <a href="#pricing" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Pricing</a>
+                <a href="#docs" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Docs</a>
+                <a href="#chnagelog" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Changelog</a>
+                <a href="#blog" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Blog</a>
+                <a href="#login" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Login</a>
+
+            </div>
+            <div class="menu-icon text-blue-500 text-[20px] cursor-pointer sm:text-[24px] lg:hidden" onclick="handle()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div
+                class="nav-btn hidden lg:block border border-grey-300 rounded-lg py-2 px-4 hover:border-2 hover:border-grey-900 lg:flex items-center">
+                <button class="text-[16px] font-medium cursor-pointer opacity-[0.7]"><i
+                        class="fa-brands fa-react text-[20px] mr-2"></i>Electron Developer <i
+                        class="fa-solid fa-arrow-right text-[16px] opacity-[0.7]"></i></button>
+            </div>
+
+
+            <div id="navigation"
+                class="navigation w-[100vw] h-[100vh] hidden fixed bg-white inset-0 px-6 py-6 lg:hidden">
+                <div class="nav-bar flex justify-between items-center">
+                    <div class="logo flex items-center cursor-pointer">
+                        <i class="fa-solid fa-medal text-blue-500 text-[24px] sm:text-[26px]"></i>
+                        <h1 class="text-[18px] text-blue-500 font-medium sm:text-[22px]">RISHAB TOOLS</h1>
+                    </div>
+
+                    <div class="xmark-icon text-blue-500 text-[20px] cursor-pointer sm:text-[24px] lg:hidden"
+                        onclick="handle()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="nav-links py-4 flex flex-col gap-4 my-6 ml-2 border-b-[1px] ">
+                    <a href="#pricing" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Pricing</a>
+                    <a href="#docs" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Docs</a>
+                    <a href="#chnagelog" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Changelog</a>
+                    <a href="#blog" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Blog</a>
+                    <a href="#login" class="text-[18px] font-medium opacity-[0.7] cursor-pointer">Login</a>
+                </div>
+
+                <div
+                    class="nav-btn w-[70vw] border border-grey-300 rounded-lg py-2 px-4 hover:border-2 hover:border-grey-900 sm:w-[40vw] md:[30vw]">
+                    <button class="text-[16px] font-medium cursor-pointer opacity-[0.7]"><i
+                            class="fa-brands fa-react text-[20px] mr-2"></i>Electron Developer <i
+                            class="fa-solid fa-arrow-right text-[16px] hidden opacity-[0.7]"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Page Section -->
+
+        <section class="home-page w-[100%] h-[90vh] px-4 bg-[#F2F0FF] content-center sm:content-center">
+
+            <div
+                class="display-version cursor-pointer mb-8 text-start bg-[#FFF6CC] p-2 font-medium text-[16px]  text-[#713F12] rounded-lg  shadow-xl sm:w-[70vw] mx-auto sm:text-center sm:text-[14px] md:w-[50vw] lg:w-[40vw] text-center lg:text-[14px] xl:w-[30vw] xl:text-[14px]">
+                <h3><span class="text-[#CA8B06]"><i class="fa-solid fa-circle text-[8px] text-[#FACC15]"></i>
+                        v0.22.0:</span> Electron 30, Chromium 124, Node 20.11.1 <i
+                        class="fa-solid fa-arrow-right ml-2"></i></h3>
+            </div>
+            <div class="home-page-options hidden sm:block sm:flex items-center justify-center gap-4 mb-6 ">
+                <h3 class="font-medium cursor-pointer"><i class="fa-solid fa-sd-card mr-2"></i>Code optional</h3>
+                <h3 class="font-medium cursor-pointer"><i class="fa-regular fa-hand mr-2"></i>Drag & drop builder</h3>
+                <h3 class="font-medium cursor-pointer"><i class="fa-brands fa-windows mr-2"></i>Windows, <i
+                        class="fa-brands fa-apple mr-2"></i>Mac, <i class="fa-brands fa-linux mr-2"></i>Linux</h3>
+            </div>
+
+
+
+            <div class="home-page-info flex flex-col gap-6 mb-8">
+                <h1
+                    class="text-[42px] font-bold leading-[1.2] sm:text-center sm:w-[80vw] sm:mx-auto sm:text-[68px] md:w-[90vw] md:text-[72px] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
+                    Web app to desktop app in minutes </h1>
+                <p
+                    class="text-[20px] leading-[1.5] tracking-wider sm:text-center tracking-wider sm:tracking-tight sm:text-[28px]  md:text-[26px] lg:w-[70vw] mx-auto xl:w-[50vw]">
+                    Take your web app codebase and transform it into a cross platform desktop app with native
+                    functionality.</p>
+            </div>
+
+            <div
+                class="btn-container w-[90vw] p-2 mx-auto flex flex-col gap-4 sm:flex-row items-center justify-center sm:w-[75vw] md:w-[65vw] lg:w-[40vw] xl:w-[35vw] 2xl:w-[30vw]">
+                <button
+                    class="bg-[blue] w-[90vw] rounded-lg p-4 font-semibold text-[18px] text-white cursor-pointer ">Download
+                    Now</button>
+                <button
+                    class="bg-[white] w-[90vw] rounded-lg p-4  font-semibold text-[18px] border text-[#000] border border-[grey] cursor-pointer">Read
+                    docs</button>
+            </div>
+        </section>
+    </header>
+
+    <!-- Apps Section -->
+
+    <section class="app-section w-[100%] h-[150vh] pb-4 bg-[#F2F0FF] pt-12">
+
+        <div
+            class="app-heading flex items-center justify-center gap-2 font-semibold text-[18px] text-[#333] mb-8 md:text-[22px]">
+            <img src="Images/asset 2.svg" class="translate-y-2">
+            <h3>APPS POWERED BY R.TOOLS</h3>
+            <img src="Images/asset 2.svg" class="-scale-x-100 translate-y-2">
+        </div>
+
+        <div class="app-container w-[100%] overflow-hidden flex flex-col gap-2">
+
+            <!-- First App row -->
+            <div class="app-row w-[100%] p-2 flex items-center gap-2  animate-loop-scroll">
+                <!-- App-1 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 3.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">ReadyRunner</h2>
+                    </div>
+                </div>
+                <!-- App-2 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 4.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">LifeAt</h2>
+                    </div>
+                </div>
+                <!-- App-3 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 5.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Convy</h2>
+                    </div>
+                </div>
+                <!-- App-4 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 6.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Morgen</h2>
+                    </div>
+                </div>
+                <!-- App-5 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 7.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Campsite</h2>
+                    </div>
+                </div>
+                <!-- App-6 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 8.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Rise</h2>
+                    </div>
+                </div>
+                <!-- App-7 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 9.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Clickup</h2>
+                    </div>
+                </div>
+                <!-- App-8 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 10.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Calendar</h2>
+                    </div>
+                </div>
+                <!-- App-9 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 11.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Sunsama</h2>
+                    </div>
+                </div>
+
+                <!-- App-1 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 21.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Basedash</h2>
+                    </div>
+                </div>
+                <!-- App-2 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 22.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Cursor</h2>
+                    </div>
+                </div>
+                <!-- App-3 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 23.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Linear</h2>
+                    </div>
+                </div>
+                <!-- App-4 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 24.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Voiceflow</h2>
+                    </div>
+                </div>
+                <!-- App-5 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 25.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Kitemaker</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second App row -->
+
+            <div class="app-row w-[100%] p-2 flex items-center gap-2  animate-loop-scroll-two">
+                <!-- App-1 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 12.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Beeper</h2>
+                    </div>
+                </div>
+                <!-- App-2 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 13.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Cal</h2>
+                    </div>
+                </div>
+                <!-- App-3 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 14.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Webstudio</h2>
+                    </div>
+                </div>
+                <!-- App-4 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 15.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Modyfi</h2>
+                    </div>
+                </div>
+                <!-- App-5 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 16.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Superpowered</h2>
+                    </div>
+                </div>
+                <!-- App-6 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 17.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Site</h2>
+                    </div>
+                </div>
+                <!-- App-7 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 18.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Typefully</h2>
+                    </div>
+                </div>
+                <!-- App-8 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 19.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Unbounce</h2>
+                    </div>
+                </div>
+                <!-- App-9 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 20.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Moises</h2>
+                    </div>
+                </div>
+
+                <!-- App-6 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 26.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Cron</h2>
+                    </div>
+                </div>
+                <!-- App-7 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 27.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Bento</h2>
+                    </div>
+                </div>
+                <!-- App-8 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 28.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Grain</h2>
+                    </div>
+                </div>
+                <!-- App-9 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900 hidden md:block">
+                    <div
+                        class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px]">
+                        <img src="Images/asset 29.png" alt="" class="w-[50px] md:w-[60px]">
+                        <h2 class="text-[12px] font-medium md:text-[14px]">Conjure</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third App row -->
+
+            <div class="app-row w-[100%] p-2 flex items-center gap-2  animate-loop-scroll md:hidden">
+                <!-- App-1 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 21.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Basedash</h2>
+                    </div>
+                </div>
+                <!-- App-2 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 22.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Cursor</h2>
+                    </div>
+                </div>
+                <!-- App-3 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 23.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Linear</h2>
+                    </div>
+                </div>
+                <!-- App-4 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 24.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Voiceflow</h2>
+                    </div>
+                </div>
+                <!-- App-5 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 25.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Kitemaker</h2>
+                    </div>
+                </div>
+                <!-- App-6 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 26.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Cron</h2>
+                    </div>
+                </div>
+                <!-- App-7 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 27.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Bento</h2>
+                    </div>
+                </div>
+                <!-- App-8 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 28.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Grain</h2>
+                    </div>
+                </div>
+                <!-- App-9 -->
+                <div class="app bg-white p-2 rounded-xl border-2 border-grey-900">
+                    <div class="app-info-container w-[70px] h-[70px] flex flex-col justify-center items-center">
+                        <img src="Images/asset 29.png" alt="" class="w-[50px]">
+                        <h2 class="text-[12px] font-medium">Conjure</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- border-2 border-blue-500 -->
+    <script src="tailwind.config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
