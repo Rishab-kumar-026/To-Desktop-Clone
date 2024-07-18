@@ -39,7 +39,7 @@
 
     <!-- Nav-Bar -->
     <header class="header w-[100%] h-[100vh]">
-        <nav id="nav" class="h-[10vh] px-4 shadow-md  flex items-center justify-between gap-4 lg:px-10">
+        <nav id="nav" class="h-[10vh] px-4 shadow-md  flex items-center justify-between gap-4 sm:px-6 lg:px-10">
             <div class="logo flex items-center cursor-pointer">
                 <i class="fa-solid fa-medal text-blue-500 text-[24px] sm:text-[26px]"></i>
                 <h1 class="text-[18px] text-blue-500 font-medium sm:text-[22px]">RISHAB TOOLS</h1>
@@ -97,7 +97,7 @@
 
         <!-- Home Page Section -->
 
-        <section class="home-page w-[100%] h-[90vh] px-4 bg-[#F2F0FF] pt-8 sm:pt-4 md:content-center pt-0">
+        <section class="home-page w-[100%] h-[90vh] px-4 bg-[#F2F0FF] pt-8 sm:pt-4 md:content-center pt-0 sm:px-6">
 
             <div
                 class="display-version cursor-pointer mb-8 text-start bg-[#FFF6CC] p-2 font-medium text-[16px] text-[#713F12] rounded-lg  shadow-xl sm:w-[70vw] mx-auto sm:text-center sm:text-[14px] md:w-[50vw] lg:w-[40vw] text-center lg:text-[14px] xl:w-[30vw] xl:text-[14px]">
@@ -138,7 +138,7 @@
 
     <!-- Apps Section -->
 
-    <section class="app-section w-[100%] h-[150vh] pb-4 bg-[#F2F0FF] pt-12">
+    <section class="app-section w-[100%] h-auto pb-4 bg-[#F2F0FF] pt-12">
 
         <div
             class="app-heading flex items-center justify-center gap-2 font-semibold text-[18px] text-[#333] mb-8 md:text-[22px]">
@@ -147,7 +147,7 @@
             <img src="Images/asset 2.svg" class="-scale-x-100 translate-y-2">
         </div>
 
-        <div class="app-container w-[100%] overflow-hidden flex flex-col gap-2">
+        <div class="app-container w-[100%] overflow-hidden flex flex-col gap-2 mb-12">
 
             <!-- First App row -->
             <div class="app-row w-[100%] p-2 flex items-center gap-2  animate-loop-scroll lg:gap-4">
@@ -444,28 +444,84 @@
                 </div>
             </div>
 
+        </div>
 
-            <!-- Build Desktop Section -->
 
-            <div class="bulid-box-container w-full h-[30vh] content-center sm:h-[60vh] lg:h-[80vh] xl:h-[100vh]">
-                <div class="build-section w-[90vw] h-[30vh] mx-auto rounded-xl bg-no-repeat bg-cover sm:h-[50vh] lg:h-[70vh] xl:h-[90vh] xl:w-[80vw]"
-                    style="background-image: url('Images/asset\ 31.jpeg');">
-                    <div
-                        class="img-container w-[90vw] p-2 h-[30vh] mx-auto relative sm:h-[50vh] sm:w-[70vw] content-center md:w-[50vw] lg:h-[70vh] xl:h-[90vh]">
-                        <img src="Images/asset 30.png"
-                            class="w-[50vw] h-[100%] mx-auto shadow-2xl object-contain sm:w-[90%] sm:h-[90%]">
-                        <button
-                            class="absolute cursor-pointer top-[40%] left-[10%] w-[70vw] bg-[blue] text-white font-semibold text-[16px] px-2 py-2 rounded-xl flex justify-center sm:w-[40vw] sm:left-[25%] md:w-[35vw] md:left-[15%] lg:w-[35vw] xl:w-[30vw] xl:py-4 xl:left-[25%] 2xl:w-[25vw] 2xl:left-[30%]"><i
-                                class="fa-solid fa-circle-play mt-1 mr-4"></i><span class="lg:hidden">Build a desktop
-                                app in 90s</span> <span class="hidden lg:block">Watch: Build a desktop app in 90
-                                secs</span></button>
+        <!-- Build Desktop Section -->
+
+        <div class="bulid-box-container w-[90vw] h-[30vh] mx-auto content-center sm:h-[60vh] lg:h-[80vh] xl:h-[100vh] mb-12">
+            <div class="build-section w-[90vw] h-[30vh]  rounded-xl bg-no-repeat bg-cover sm:h-[50vh] lg:h-[70vh] xl:h-[90vh] xl:w-[80vw] mx-auto"
+                style="background-image: url('Images/asset\ 31.jpeg');">
+                <div
+                    class="img-container w-[90vw] p-2 h-[30vh] mx-auto relative sm:h-[50vh] sm:w-[70vw] content-center md:w-[50vw] lg:h-[70vh] xl:h-[90vh]">
+                    <img src="Images/asset 30.png"
+                        class="w-[50vw] h-[100%] mx-auto shadow-2xl object-contain sm:w-[90%] sm:h-[90%]">
+                    <button
+                        class="absolute cursor-pointer top-[40%] left-[10%] w-[70vw] bg-[blue] text-white font-semibold text-[16px] px-2 py-2 rounded-xl flex justify-center sm:w-[40vw] sm:left-[25%] md:w-[35vw] md:left-[15%] lg:w-[35vw] xl:w-[30vw] xl:py-4 xl:left-[25%] 2xl:w-[25vw] 2xl:left-[30%]"><i
+                            class="fa-solid fa-circle-play mt-1 mr-4"></i><span class="lg:hidden">Build a desktop
+                            app in 90s</span> <span class="hidden lg:block">Watch: Build a desktop app in 90
+                            secs</span></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- How it works Section -->
+
+    <section class="working-info w-full h-[200vh] bg-white px-4 sm:px-6 2xl:mx-auto">
+        <div class="step-1-heading mt-8 mb-12 text-center">
+            <h1 class="text-[42px] font-bold leading-[1.2]">How it works</h1>
+        </div>
+
+        <!-- Step-1 Box -->
+        <div class="step-1 border-2 border-grey-900 rounded-xl w-[90vw] bg-[#FBFBFD] px-4 pt-6 pb-12 lg:flex justify-between xl:w-[80vw] mx-auto xl:p-8">
+            
+            <div class="step-1-info-box lg:w-[40%] xl:w-[50%]">
+                <button
+                    class="bg-[#FFF6CC] text-[#713F12] font-semibold py-2 px-4 rounded-lg cursor-pointer mb-8">Step-1</button>
+                <h1 class="text-[12px] font-bold leading-[1.2] w-[80%] mb-8 sm:w-[90%] md:w-full text-[36px]">Bootstrap straight from your web app</h1>
+                <p class="text-[18px] w-full leading-[1.5] tracking-wider font-medium opacity-[0.7] mb-8 sm:w-[90%] md:w-full">Copy and paste your web app url into ToDesktop.
+                    Customise your app design, app icon and window frame UI with no code.</p>
+
+                <div class="info-box-lists flex justify-between mb-14">
+                    <div class="list-1 w-[40%] flex flex-col gap-4">
+                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
+                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
+                            <h2 class="font-medium opacity-[0.7] underline decoration-gray-400 underline-offset-4 ">Multiple Windows</h2>
+                        </div>
+                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
+                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
+                            <h2 class="font-medium opacity-[0.7] underline decoration-gray-400 underline-offset-4">Menubar/tray Menus</h2>
+                        </div>
+                        <div class="list-box flex gap-2 cursor-pointe text-[18px] sm:gap-4">
+                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
+                            <h2 class="font-medium opacity-[0.7] underline-offset-8">Offline Support</h2>
+                        </div>
+                    </div>
+
+                    <div class="list-1 w-[40%] flex flex-col gap-4">
+                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
+                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
+                            <h2 class="font-medium opacity-[0.7] underline decoration-gray-400 underline-offset-4">Customisable Menus</h2>
+                        </div>
+                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
+                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
+                            <h2 class="font-medium opacity-[0.7] underline decoration-gray-400 underline-offset-4">Launch on startup</h2>
+                        </div> 
+                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
+                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
+                            <h2 class="font-medium opacity-[0.7] underline-offset-8">Tabs (Mac Only)</h2>
+                        </div>
                     </div>
                 </div>
             </div>
 
-
+            <div class="step-1-box-img-container cursor-pointer w-full lg:w-[50%] content-center xl:w-[40%]">
+                <img src="Images/asset 66.svg" class="sm:mx-auto">
+             </div>
         </div>
-
     </section>
 
 
