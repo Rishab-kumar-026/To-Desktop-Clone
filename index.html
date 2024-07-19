@@ -449,7 +449,8 @@
 
         <!-- Build Desktop Section -->
 
-        <div class="bulid-box-container w-[90vw] h-[30vh] mx-auto content-center sm:h-[60vh] lg:h-[80vh] xl:h-[100vh] mb-12">
+        <div
+            class="bulid-box-container w-[90vw] h-[30vh] mx-auto content-center sm:h-[60vh] lg:h-[80vh] xl:h-[100vh] mb-12">
             <div class="build-section w-[90vw] h-[30vh]  rounded-xl bg-no-repeat bg-cover sm:h-[50vh] lg:h-[70vh] xl:h-[90vh] xl:w-[80vw] mx-auto"
                 style="background-image: url('Images/asset\ 31.jpeg');">
                 <div
@@ -470,58 +471,165 @@
 
     <!-- How it works Section -->
 
-    <section class="working-info w-full h-[200vh] bg-white px-4 sm:px-6 2xl:mx-auto">
+    <section class="working-info w-full h-auto mb-12 bg-white px-4 sm:px-6 2xl:mx-auto">
         <div class="step-1-heading mt-8 mb-12 text-center">
             <h1 class="text-[42px] font-bold leading-[1.2]">How it works</h1>
         </div>
 
         <!-- Step-1 Box -->
-        <div class="step-1 border-2 border-grey-900 rounded-xl w-[90vw] bg-[#FBFBFD] px-4 pt-6 pb-12 lg:flex justify-between xl:w-[80vw] mx-auto xl:p-8">
-            
-            <div class="step-1-info-box lg:w-[40%] xl:w-[50%]">
+        <div
+            class="step-1 border-2 border-grey-900 rounded-xl w-[90vw] bg-[#FBFBFD] px-4 pt-6 pb-12 mb-8 lg:flex justify-between xl:w-[80vw] mx-auto xl:p-8">
+
+            <div class="step-1-info-box lg:w-[50%] lg:p-6">
                 <button
                     class="bg-[#FFF6CC] text-[#713F12] font-semibold py-2 px-4 rounded-lg cursor-pointer mb-8">Step-1</button>
-                <h1 class="text-[12px] font-bold leading-[1.2] w-[80%] mb-8 sm:w-[90%] md:w-full text-[36px]">Bootstrap straight from your web app</h1>
-                <p class="text-[18px] w-full leading-[1.5] tracking-wider font-medium opacity-[0.7] mb-8 sm:w-[90%] md:w-full">Copy and paste your web app url into ToDesktop.
+                <h1
+                    class="text-[12px] font-bold leading-[1.2] w-[80%] mb-8 sm:w-[90%] md:w-full text-[36px] xl:w-[90%]">
+                    Bootstrap
+                    straight from your web app</h1>
+                <p
+                    class="text-[18px] w-full leading-[1.5] tracking-wider font-medium opacity-[0.7] mb-8 sm:w-[90%] md:w-full">
+                    Copy and paste your web app url into ToDesktop.
                     Customise your app design, app icon and window frame UI with no code.</p>
 
-                <div class="info-box-lists flex justify-between mb-14">
-                    <div class="list-1 w-[40%] flex flex-col gap-4">
-                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
-                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
-                            <h2 class="font-medium opacity-[0.7] underline decoration-gray-400 underline-offset-4 ">Multiple Windows</h2>
-                        </div>
-                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
-                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
-                            <h2 class="font-medium opacity-[0.7] underline decoration-gray-400 underline-offset-4">Menubar/tray Menus</h2>
-                        </div>
-                        <div class="list-box flex gap-2 cursor-pointe text-[18px] sm:gap-4">
-                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
-                            <h2 class="font-medium opacity-[0.7] underline-offset-8">Offline Support</h2>
-                        </div>
-                    </div>
-
-                    <div class="list-1 w-[40%] flex flex-col gap-4">
-                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
-                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
-                            <h2 class="font-medium opacity-[0.7] underline decoration-gray-400 underline-offset-4">Customisable Menus</h2>
-                        </div>
-                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
-                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
-                            <h2 class="font-medium opacity-[0.7] underline decoration-gray-400 underline-offset-4">Launch on startup</h2>
-                        </div> 
-                        <div class="list-box flex gap-2 cursor-pointer text-[18px] sm:gap-4">
-                            <i class="fa-solid fa-check mt-2 opacity-[0.7]"></i>
-                            <h2 class="font-medium opacity-[0.7] underline-offset-8">Tabs (Mac Only)</h2>
-                        </div>
-                    </div>
+                <div class="info-box-lists flex justify-between mb-14 xl:w-[90%]">
+                    <ul class="grid grid-cols-2 px-2 gap-4 text-[18px] w-full">
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Multiple windows</span>
+                        </li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Customisable menus</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Menubar/tray menus</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">
+                                Launch on startup</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointe flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Offline support</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Tabs (Mac only)</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="step-1-box-img-container cursor-pointer w-full lg:w-[50%] content-center xl:w-[40%]">
-                <img src="Images/asset 66.svg" class="sm:mx-auto">
-             </div>
+            <div
+                class="step-1-box-img-container cursor-pointer w-full md:w-[90%] mx-auto lg:w-[40%] content-center xl:w-[50%] ">
+                <img src="Images/asset 66.svg" class="lg:h-[50%] rounded-lg mx-auto 2xl:w-[80%] 2xl:h-[70%]">
+            </div>
         </div>
+
+        <!-- Step-2 Box -->
+        <div
+            class="step-2 border-2 border-grey-900 rounded-xl w-[90vw] bg-[#FBFBFD] px-4 pt-6 pb-12 mb-8 lg:flex justify-between xl:w-[80vw] mx-auto xl:p-6">
+
+            <div class="step-2-info-box lg:w-[50%] lg:p-6 xl:w-[50%]">
+                <button
+                    class="bg-[#FFF6CC] text-[#713F12] font-semibold py-2 px-4 rounded-lg cursor-pointer mb-8">Step-2</button>
+                <h1 class="text-[12px] font-bold leading-[1.2] w-[80%] mb-8 sm:w-[90%] md:w-full text-[36px]">Add
+                    desktop code to customise your web app</h1>
+                <p
+                    class="text-[18px] w-full leading-[1.5] tracking-wider font-medium opacity-[0.7] mb-8 sm:w-[90%] md:w-full">
+                    No need to create a new repository, just add code from our desktop APIs to your codebase and get
+                    access to system level functionality.</p>
+
+                <div class="info-box-lists flex gap-10 mb-14 xl:w-[100%]">
+                    <ul class="grid grid-cols-2 px-2 gap-4 text-[18px] w-full">
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Native notifications</span>
+                        </li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Global keyboard
+                                shortcuts</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Application menu</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Context menu</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Dock/Icon</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Isolated browser views</span>
+                        </li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer w-[90%] flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">File system access</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer w-[90%] flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">…plus more APIs in our
+                                docs</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div
+                class="step-1-box-img-container cursor-pointer w-full md:w-[90%] mx-auto lg:w-[40%] content-center xl:w-[50%] ">
+                <img src="Images/step-2 section img.png" class="lg:h-[50%] rounded-lg mx-auto 2xl:w-[80%] 2xl:h-[70%]">
+            </div>
+        </div>
+
+        <!-- Step-3 Box-->
+
+        <div
+            class="step-3 border-2 border-grey-900 rounded-xl w-[90vw] bg-[#FBFBFD] px-4 pt-6 pb-12 mb-8 lg:flex justify-between xl:w-[80vw] mx-auto xl:p-8">
+
+            <div class="step-3-info-box lg:w-[50%] lg:p-6">
+                <button
+                    class="bg-[#FFF6CC] text-[#713F12] font-semibold py-2 px-4 rounded-lg cursor-pointer mb-8">Step-3</button>
+                <h1
+                    class="text-[12px] font-bold leading-[1.2] w-[80%] mb-8 sm:w-[90%] md:w-full text-[36px] xl:w-[90%]">
+                    Publish 🚀</h1>
+                <p
+                    class="text-[18px] w-full leading-[1.5] tracking-wider font-medium opacity-[0.7] mb-8 sm:w-[90%] md:w-full">
+                    One-click will publish your desktop app to your customers and give you a download link to put on
+                    your website.</p>
+
+                <div class="info-box-lists flex justify-between mb-14 xl:w-[90%]">
+                    <ul class="grid grid-cols-2 px-2 gap-4 text-[18px] w-full">
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Super-fast global CDN</span>
+                        </li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Download links on your domain</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Magic universal links</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">
+                                Download analytics</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointe flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Manage version numbers</span></li>
+                        <li class="font-medium opacity-[0.7] cursor-pointer flex gap-4"><i
+                                class="fa-solid fa-check mt-2 opacity-[0.7]"></i><span
+                                class="underline decoration-gray-400 underline-offset-4">Native installers for all platforms</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="step-1-box-img-container cursor-pointer w-full md:w-[90%] mx-auto lg:w-[40%] content-center xl:w-[50%] ">
+                <img src="Images/step-3 section img.png" class="lg:h-[50%] rounded-lg mx-auto 2xl:w-[80%] 2xl:h-[70%]">
+            </div>
+        </div>
+
+
     </section>
 
 
