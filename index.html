@@ -25,6 +25,9 @@
                             from: { transform: "translateX(-100%)" },
                             to: { transform: "translateX(0)" },
                         },
+                        width: {
+                            'fit-content': 'fit-content',
+                        },
                     },
                 },
 
@@ -806,26 +809,68 @@
     <!-- Customer Stories Section -->
 
     <section class="customer-stories  w-full h-[200vh] mb-12 bg-white px-4 sm:px-6 xl:mx-auto">
-        <div class="customer-section-heading w-[50%] mb-12">
-            <h1 class="text-[42px] font-semibold leading-[1.2]">Customer Stories</h1>
+        <div class="customer-section-heading w-[50%] mb-12 sm:w-full xl:w-[90vw] xl:mx-auto text-start">
+            <h1 class="text-[42px] font-bold leading-[1.2]">Customer Stories</h1>
         </div>
-             
+
 
         <div
-            class="first-story border-2 border-grey-900 rounded-xl w-[90vw] bg-[#FBFBFD] px-4 pt-6 pb-12 mb-8 lg:flex justify-between xl:w-[90vw] mx-auto xl:p-8">
+            class="first-story border-2 border-grey-900 rounded-xl w-[90vw] h-auto bg-[#FBFBFD] pl-4 pt-6 mb-8  lg:flex justify-between xl:w-[90vw] mx-auto xl:pl-8">
 
-            <div class="story-info-box lg:w-[50%] lg:p-6">
-                
+            <div class="story-info-box px-6 mb-8 h-auto lg:w-[50vw] lg:pl-6 xl:w-[55vw] 2xl:w-[40vw] xl:content-center">
+                <img src="Images/asset 44.svg" class="mb-8">
+                <h1 class="font-medium text-[24px] leading-[1.2] mb-8">ClickUp used ToDesktop to get their desktop app
+                    in front of customers in days instead of months.</h1>
+
+                <div class="story-links-container grid grid-cols-1 gap-2 mb-8 sm:flex flex-row flex-wrap">
+                    <div class="link p-2 bg-[#FFF6CC] rounded-lg text-[#665300] cursor-pointer" style="width: fit-content;">
+                        <h3 class="flex items-center font-medium"><i class="fa-solid fa-check mr-2"></i>Chromeless UI
+                        </h3>
+                    </div>
+                    <div class="link p-2 bg-[#FFF6CC] rounded-lg text-[#665300] cursor-pointer" style="width: fit-content;">
+                        <h3 class="flex items-center font-medium"><i class="fa-solid fa-check mr-2"></i>Native
+                            spellcheck</h3>
+                    </div>
+                    <div class="link p-2 bg-[#FFF6CC] rounded-lg text-[#665300] cursor-pointer" style="width: fit-content;">
+                        <h3 class="flex items-center font-medium"><i class="fa-solid fa-check mr-2"></i>Task time in
+                            menubar</h3>
+                    </div>
+                    <div class="link p-2 bg-[#FFF6CC] rounded-lg text-[#665300] cursor-pointer" style="width: fit-content;">
+                        <h3 class="flex items-center font-medium"><i class="fa-solid fa-check mr-2"></i>Notification
+                            count in the dock</h3>
+                    </div>
+                    <div class="link p-2 bg-[#FFF6CC] rounded-lg text-[#665300] cursor-pointer" style="width: fit-content;">
+                        <h3 class="flex items-center font-medium"><i class="fa-solid fa-check mr-2"></i>Global hotkey to
+                            create task</h3>
+                    </div>
+                </div>
+
+                <p
+                    class="text-[18px] w-full leading-[1.3] tracking-wider font-medium opacity-[0.5] mb-8 sm:text-[18px] md:w-full text-[16px] lg:text-[18px]">
+                    “ToDesktop provided us with a polished desktop app in no time. Their expert team guided us through a
+                    smooth migration from our outdated legacy desktop app, enabling us to deliver new and improved
+                    features to our customers within days.”</p>
+
+
+                <div class="person-info-container flex flex-row gap-4">
+                    <img src="Images/asset 45.jpeg" class="rounded-full">
+                    <div class="person-details-container">
+                        <h1 class="font-medium">Rishab Kumar</h1>
+                        <h3 class="opacity-[0.5] font-medium">Founder & CEO, Click UP</h3>
+                    </div>
                 </div>
             </div>
 
             <div
-                class="step-1-box-img-container cursor-pointer w-full md:w-[90%] mx-auto lg:w-[40%] content-center xl:w-[50%] xl:h-[70vh]">
-                <img src="Images/step-3 section img.png"
-                    class="lg:h-[50%] rounded-lg mx-auto 2xl:w-full 2xl:h-full object-contain">
+                class="story-box-img-container cursor-pointer flex justify-end lg:items-end" > 
+                <img src="Images/asset 46.png"
+                    class="sm:w-[70vw] md:w-[60vw] lg:w-[45vw] lg:h-[70%] xl:h-[95%] 2xl:w-[38vw] h-full">
             </div>
         </div>
-        
+
+
+
+
     </section>
 
 
