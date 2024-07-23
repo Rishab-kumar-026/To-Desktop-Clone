@@ -8,7 +8,6 @@ const box_divs = document.querySelectorAll(".box");
 
 box_divs.forEach((box_div) => {
     box_div.addEventListener("mouseover", () => {
-        console.log("hello world");
         box_div.style.backgroundColor = "#FFDEE9";
         box_div.style.backgroundImage = "linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%)";
         box_div.style.backgroundSize = "cover";
@@ -19,5 +18,21 @@ box_divs.forEach((box_div) => {
         box_div.style.background = "#FBFBFD";
     });
 });
+
+const questions = document.querySelectorAll("#question-box");
+const answers = document.querySelectorAll("#answer-box");
+const questionBoxIcons = document.querySelectorAll("#question-box i");
+
+questions.forEach((question, index) => {
+    question.addEventListener("click", () => {
+        answers[index].classList.toggle("hidden");
+        questionBoxIcons[index].classList.toggle("fa-xmark");
+    });
+});
+
+
+
+
+
 
 
