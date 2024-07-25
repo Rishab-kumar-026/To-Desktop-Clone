@@ -30,6 +30,16 @@ questions.forEach((question, index) => {
     });
 });
 
+const links = document.querySelectorAll(".nav-links a");
+const div = document.getElementById("navigation");
+
+links.forEach((link) =>{
+    link.addEventListener("click",()=>{
+       div.classList.add("hidden");
+    });
+  
+});
+
 
 
 
